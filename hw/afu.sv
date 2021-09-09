@@ -88,7 +88,6 @@ module afu
           begin 
 	     // Asnchronous reset for the memory-mapped register.
 	     user_reg <= '0;
-		 q_fifo <= '0;
 		 d_fifo <= '0;
           end
         else
