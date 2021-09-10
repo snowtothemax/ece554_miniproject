@@ -77,7 +77,7 @@ module afu
    
    // instantiate a FIFO
    fifo fifo_1(.clk(clk), .rst_n(rst), .en(en_fifo),
-	        .d(d_fifo), .q(q_fifo));
+	        .d(user_reg), .q(q_fifo));
 
    // =============================================================//   
    // MMIO write code
