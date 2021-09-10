@@ -62,11 +62,11 @@ module afu
    logic [127:0] afu_id = `AFU_ACCEL_UUID;
 
    // User register (memory mapped to address h0020) to test MMIO over CCI-P.
-   logic signed [63:0]  user_reg, q_fifo;
+   logic [63:0]  user_reg, q_fifo;
    
    wire en_fifo;
    
-   assign en_fifo = (rx.c0.mmioWrValid == 1) && (mmio_hdr.address == 16'h0020);
+   assign en_fifo = rx.c0.mmioWrValid && (mmio_hdr.address == 16'h0020);
    
    // The Rx c0 header is normally used for responses to reads from the host processor's memory.
    // For MMIO responses (i.e. when c0 mmmioRdValid or mmioWrValid is asserted), we need to 
@@ -76,7 +76,7 @@ module afu
    assign mmio_hdr = t_ccip_c0_ReqMmioHdr'(rx.c0.hdr);
    
    // instantiate a FIFO
-   fifo fifo_1(.clk(clk), .rst_n(~rst), .en(en_fifo),
+   fifo fifo_1(.clk(clk), .rst_n(!rst), .en(en_fifo),
 	        .d(user_reg), .q(q_fifo));
 
    // =============================================================//   
