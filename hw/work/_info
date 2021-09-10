@@ -11,51 +11,51 @@ cModel Technology
 dD:/intelFPGA/20.1
 vfifo
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1631223892
+Z1 !s110 1631281111
 !i10b 1
 !s100 f=RNMRT1GZNleEBYan9?20
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IEgb3JM8z<e<P9?iQh;bE@3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z3 dC:/Users/front/OneDrive/Documents/GitHub/ece554_miniproject/hw
+Z4 dC:/Users/front/OneDrive/Documents/GitHub/ece554_miniproject/hw
 w1631223863
 8C:/Users/front/OneDrive/Documents/GitHub/ece554_miniproject/hw/fifo.sv
 FC:/Users/front/OneDrive/Documents/GitHub/ece554_miniproject/hw/fifo.sv
-!i122 6
+!i122 8
 L0 6 34
-Z4 OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1631223892.000000
+Z6 !s108 1631281111.000000
 !s107 C:/Users/front/OneDrive/Documents/GitHub/ece554_miniproject/hw/fifo.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/front/OneDrive/Documents/GitHub/ece554_miniproject/hw/fifo.sv|
 !i113 1
-Z5 o-work work -sv
-Z6 tCvgOpt 0
+Z7 o-work work -sv
+Z8 tCvgOpt 0
 vfifo_tb
 R0
-!s110 1631223893
+R1
 !i10b 1
 !s100 J`J:jF?4e0c>Y]JOTf_U00
-R1
-IIH[UZ9N_^DEOjX7G6h84@2
 R2
-S1
+IIH[UZ9N_^DEOjX7G6h84@2
 R3
+S1
+R4
 w1631220120
 8C:/Users/front/OneDrive/Documents/GitHub/ece554_miniproject/hw/fifo_tb.sv
 FC:/Users/front/OneDrive/Documents/GitHub/ece554_miniproject/hw/fifo_tb.sv
-!i122 7
+!i122 9
 L0 3 95
-R4
+R5
 r1
 !s85 0
 31
-!s108 1631223893.000000
+R6
 !s107 C:/Users/front/OneDrive/Documents/GitHub/ece554_miniproject/hw/fifo_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/front/OneDrive/Documents/GitHub/ece554_miniproject/hw/fifo_tb.sv|
 !i113 1
-R5
-R6
+R7
+R8
